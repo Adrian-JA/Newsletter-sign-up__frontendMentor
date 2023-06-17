@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+        <link rel="stylesheet" href="style.css" />
+
+        <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+        <script defer src="confirmation.js"></script>
+    </head>
+    <body>
+        <section class="card">
+            <section class="card__content card--column">
+                <h2 class="card__title">Stay updated!</h2>
+                <p class="card__text">Join 60,000+ product managers receiving monthly updates on:</p>
+
+                <ul class="card__list">
+                    <li class="card__item">
+                        <img class="card__icon-list" src="assets/images/icon-list.svg" />
+                        <p class="card__text-list">Product discovery and building what matters</p>
+                    </li>
+                    <li class="card__item">
+                        <img class="card__icon-list" src="assets/images/icon-list.svg" />
+                        <p class="card__text-list">Measuring to ensure updates are a success</p>
+                    </li>
+                    <li class="card__item">
+                        <img class="card__icon-list" src="assets/images/icon-list.svg" />
+                        <p class="card__text-list">And much more!</p>
+                    </li>
+                </ul>
+
+                <form class="card__form" id="form">
+                    <section class="card__labels">
+                        <label for="email" class="card__label">Email address</label>
+                        <label for="email" class="card__label-error hide" id="valid-email">Valid email required</label>
+                    </section>
+                    <input type="text" name="email" id="email" class="card__input--text" placeholder="email@company.com" />
+                    <button type="submit" class="card__input--button" id="submit">Subscribe to monthly newsletter</button>
+                </form>
+            </section>
+            <section class="card__design card--column">
+                <img class="card__img-desktop" src="assets/images/illustration-sign-up-desktop.svg" />
+                <img class="card__img-mobile hide" src="assets/images/illustration-sign-up-mobile.svg" />
+            </section>
+        </section>
+
+        <section class="card-approved hide">
+            <img class="card-approved__icon" src="assets/images/icon-success.svg" />
+            <h2 class="card-approved__title">Thanks for subscribing!</h2>
+            <p class="card-approved__text">
+                A confirmation email has been sent to <span class="card-approved__email">ash@loremcompany.com.</span> Please open it and click the button inside to confirm your
+                subscription.
+            </p>
+            <button class="card-approved__btn">Dismiss message</button>
+        </section>
+    </body>
+</html>
